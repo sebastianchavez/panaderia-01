@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros - Hogaza Dorada</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Playfair Display', 'Georgia', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="min-h-screen flex flex-col bg-white">
+  <div data-header></div>
+
+  <main class="flex-1">
+    <section class="relative overflow-hidden bg-gradient-to-br from-amber-100 via-orange-50 to-amber-50 py-16">
+      <div class="absolute inset-0 bg-grid-pattern opacity-30"></div>
+      <div class="container-page relative text-center reveal">
+        <p class="section-subtitle">Nuestra historia</p>
+        <h1 class="font-display text-4xl md:text-6xl font-bold text-gray-900 mb-4">Sobre Hogaza Dorada</h1>
+        <p class="text-gray-600 max-w-2xl mx-auto text-lg">Tres décadas encendiendo hornos y amasando tradición. Conoce a las manos que dan forma a cada hogaza, medialuna y torta.</p>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="container-page">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div class="reveal">
+            <p class="section-subtitle">Desde 1985</p>
+            <h2 class="section-title">Una historia amasada con tiempo</h2>
+            <div class="space-y-5 text-gray-600 leading-relaxed">
+              <p>Todo comenzó una madrugada de otoño en 1985, cuando doña Carmen encendió por primera vez el viejo horno de leña que aún sigue en el fondo del obrador. Con una receta heredada de su abuela y un saco de harina orgánica, dio forma a la primera hogaza de Hogaza Dorada.</p>
+              <p>Aquel pan se hornea todavía siguiendo la misma fórmula, con harina molida a piedra, agua de manantial y una fermentación lenta de más de 24 horas que le da ese sabor profundo y la corteza crujiente que nos distingue.</p>
+              <p>Cuarenta años después seguimos abriendo la persiana al amanecer, recibiendo a los mismos vecinos de siempre y a nuevas generaciones que vuelven por el sabor de lo auténtico.</p>
+            </div>
+            <div class="mt-8 grid grid-cols-3 gap-4">
+              <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-5 border border-amber-100">
+                <p class="font-display text-3xl font-bold gradient-text">1985</p>
+                <p class="text-sm text-gray-600 mt-1">Año de fundación</p>
+              </div>
+              <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-5 border border-amber-100">
+                <p class="font-display text-3xl font-bold gradient-text">24h</p>
+                <p class="text-sm text-gray-600 mt-1">Fermentación</p>
+              </div>
+              <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-5 border border-amber-100">
+                <p class="font-display text-3xl font-bold gradient-text">100%</p>
+                <p class="text-sm text-gray-600 mt-1">Artesanal</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative reveal">
+            <div class="absolute inset-0 bg-gradient-to-br from-amber-200 to-orange-200 rounded-3xl transform -rotate-3"></div>
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80" alt="Panadero amasando" class="relative rounded-3xl shadow-2xl w-full aspect-[4/5] object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gradient-to-b from-amber-50/40 to-white">
+      <div class="container-page">
+        <div class="text-center mb-14 reveal">
+          <p class="section-subtitle">Nuestro equipo</p>
+          <h2 class="section-title">Las manos detrás del horno</h2>
+          <p class="text-gray-600 max-w-xl mx-auto text-lg">Un equipo de panaderos, pasteleros y amantes del pan que trabaja cada día para que recibas lo mejor de nuestra casa.</p>
+        </div>
+        <div id="equipo-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger"></div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="container-page">
+        <div class="reveal">
+          <p class="section-subtitle">Nuestros valores</p>
+          <h2 class="section-title mb-12">Lo que nos mueve cada mañana</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6 reveal">
+          <div class="p-8 rounded-3xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-4 shadow-sm">
+              <span class="text-3xl">🌾</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Materia prima noble</h3>
+            <p class="text-gray-600 leading-relaxed">Trabajamos con productores locales, harinas orgánicas y materias primas de estación. La calidad del pan empieza mucho antes del horno.</p>
+          </div>
+          <div class="p-8 rounded-3xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-4 shadow-sm">
+              <span class="text-3xl">🤲</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Hecho a mano</h3>
+            <p class="text-gray-600 leading-relaxed">Nada de máquinas industriales. Cada pieza se forma, fermenta y se hornea con el cuidado de quien sabe que el pan es, sobre todo, un acto de amor.</p>
+          </div>
+          <div class="p-8 rounded-3xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-4 shadow-sm">
+              <span class="text-3xl">⏱️</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Tiempo y paciencia</h3>
+            <p class="text-gray-600 leading-relaxed">Fermentaciones largas, levaduras madre y cocciones lentas. Le devolvemos al pan el tiempo que la industria le quitó.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gradient-to-br from-amber-500 via-orange-500 to-amber-600 text-white">
+      <div class="container-page text-center reveal">
+        <h2 class="font-display text-3xl md:text-5xl font-bold mb-4">¿Te gustaría probar nuestros panes?</h2>
+        <p class="text-amber-100 mb-8 max-w-2xl mx-auto text-lg">Pasa por nuestra tienda o haz tu pedido online. Te lo llevamos calentito a tu casa.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="productos.html" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-amber-700 font-semibold rounded-full hover:bg-amber-50 transition shadow-xl">
+            Ver Productos
+          </a>
+          <a href="contacto.html" class="inline-flex items-center gap-2 px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-full hover:bg-white/10 transition">
+            Visítanos
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    const equipoGrid = document.getElementById('equipo-grid');
+    equipoGrid.innerHTML = EQUIPO.map((m, idx) => `
+      <div class="reveal reveal-delay-${(idx % 4) + 1} card text-center p-6 hover:-translate-y-1">
+        <div class="w-28 h-28 mx-auto rounded-full overflow-hidden mb-4 ring-4 ring-amber-100 shadow-md">
+          <img src="${m.foto}" alt="${m.nombre}" class="w-full h-full object-cover">
+        </div>
+        <h3 class="font-display text-xl font-bold text-gray-900 mb-1">${m.nombre}</h3>
+        <p class="text-sm font-medium text-amber-700 mb-3">${m.rol}</p>
+        <p class="text-sm text-gray-600 leading-relaxed">${m.descripcion}</p>
+      </div>
+    `).join('');
+  </script>
+</body>
+</html>

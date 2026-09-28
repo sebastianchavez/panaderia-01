@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hogaza Dorada - Panadería Artesanal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Playfair Display', 'Georgia', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="min-h-screen flex flex-col bg-white">
+  <div data-header></div>
+
+  <main class="flex-1">
+    <section class="relative overflow-hidden hero-gradient pt-12 pb-24 md:pt-20 md:pb-32">
+      <div class="absolute inset-0 bg-grid-pattern opacity-40"></div>
+      <div class="absolute top-20 right-20 w-72 h-72 bg-amber-200 rounded-full blur-3xl opacity-40"></div>
+      <div class="absolute bottom-20 left-20 w-64 h-64 bg-orange-200 rounded-full blur-3xl opacity-30"></div>
+
+      <div class="container-page relative">
+        <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div class="animate-fade-in">
+            <div class="inline-flex items-center gap-2 bg-white/70 backdrop-blur px-4 py-2 rounded-full shadow-sm border border-amber-100 mb-6">
+              <span class="text-sm font-medium text-amber-700">Desde 1985</span>
+              <span class="text-amber-300">•</span>
+              <span class="text-sm font-medium text-gray-700">Horneado a leña</span>
+            </div>
+            <h1 class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-[1.1] mb-6">
+              El sabor de la <span class="gradient-text">tradición</span> en cada mordisco
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed max-w-lg">
+              Panes de masa madre, medialunas recién hechas y facturas horneadas al amanecer. Más de 35 años horneando con la misma dedicación de la primera hogaza.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="productos.html" class="btn-primary btn-shine">
+                Ver Productos
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+              <a href="nosotros.html" class="btn-secondary">Conócenos</a>
+            </div>
+            <div class="mt-12 grid grid-cols-3 gap-6 max-w-md">
+              <div class="reveal reveal-delay-1">
+                <p class="font-display text-4xl font-bold gradient-text">35+</p>
+                <p class="text-sm text-gray-600 mt-1">Años horneando</p>
+              </div>
+              <div class="reveal reveal-delay-2">
+                <p class="font-display text-4xl font-bold gradient-text">12k+</p>
+                <p class="text-sm text-gray-600 mt-1">Clientes felices</p>
+              </div>
+              <div class="reveal reveal-delay-3">
+                <p class="font-display text-4xl font-bold gradient-text">30+</p>
+                <p class="text-sm text-gray-600 mt-1">Recetas de la casa</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative animate-fade-in">
+            <div class="absolute -top-6 -left-6 w-32 h-32 bg-amber-300 rounded-full blur-2xl opacity-50"></div>
+            <div class="absolute -bottom-6 -right-6 w-40 h-40 bg-orange-300 rounded-full blur-2xl opacity-40"></div>
+            <div class="relative">
+              <div class="absolute -top-4 -right-4 bg-white rounded-2xl shadow-2xl p-4 z-10 animate-bounce-subtle" style="animation-duration: 4s">
+                <div class="flex items-center gap-2">
+                  <div class="flex text-yellow-400">★★★★★</div>
+                  <span class="font-bold text-gray-900">4.9</span>
+                </div>
+                <p class="text-xs text-gray-500 mt-0.5">+250 reseñas</p>
+              </div>
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80" alt="Pan artesanal" class="relative rounded-3xl shadow-2xl w-full object-cover aspect-[4/5]">
+              <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-2xl p-4 z-10 animate-bounce-subtle" style="animation-duration: 5s">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 bg-gradient-to-br from-amber-400 to-orange-400 rounded-full flex items-center justify-center text-white font-bold">C</div>
+                  <div>
+                    <p class="font-bold text-sm text-gray-900">Carmen G.</p>
+                    <p class="text-xs text-amber-700">¡Recién horneado!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="container-page">
+        <div class="text-center mb-14 reveal">
+          <p class="section-subtitle">Explora</p>
+          <h2 class="section-title">¿Qué se te antoja hoy?</h2>
+          <p class="text-gray-600 max-w-xl mx-auto text-lg">Descubre nuestras categorías y encuentra el pan, la factura o el dulce perfecto para cada momento del día.</p>
+        </div>
+        <div id="categorias-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 stagger"></div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gradient-to-b from-amber-50/40 to-white">
+      <div class="container-page">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4 reveal">
+          <div>
+            <p class="section-subtitle">Recién del horno</p>
+            <h2 class="section-title">Productos Destacados</h2>
+          </div>
+          <a href="productos.html" class="btn-ghost group">
+            Ver todos
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+        <div id="destacados-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger"></div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="container-page">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div class="reveal">
+            <p class="section-subtitle">Por qué elegirnos</p>
+            <h2 class="section-title">Tradición que se hornea</h2>
+            <p class="text-gray-600 mb-10 leading-relaxed text-lg">En Hogaza Dorada creemos que un buen pan necesita tiempo, manos expertas y los mejores ingredientes. Por eso seguimos fermentaciones largas, usamos harina seleccionada y encendemos el horno de leña cada madrugada.</p>
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div class="reveal reveal-delay-1 p-5 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-3 shadow-sm">
+                  <span class="text-2xl">🌾</span>
+                </div>
+                <h3 class="font-display text-lg font-bold text-gray-900 mb-1">Harinas seleccionadas</h3>
+                <p class="text-sm text-gray-600">Molienda propia y cereales de origen.</p>
+              </div>
+              <div class="reveal reveal-delay-2 p-5 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-3 shadow-sm">
+                  <span class="text-2xl">🔥</span>
+                </div>
+                <h3 class="font-display text-lg font-bold text-gray-900 mb-1">Horno de leña</h3>
+                <p class="text-sm text-gray-600">El mismo calor desde 1985.</p>
+              </div>
+              <div class="reveal reveal-delay-3 p-5 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-3 shadow-sm">
+                  <span class="text-2xl">⏰</span>
+                </div>
+                <h3 class="font-display text-lg font-bold text-gray-900 mb-1">Fermentación larga</h3>
+                <p class="text-sm text-gray-600">Hasta 24 horas para mejor sabor.</p>
+              </div>
+              <div class="reveal reveal-delay-4 p-5 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-3 shadow-sm">
+                  <span class="text-2xl">🚚</span>
+                </div>
+                <h3 class="font-display text-lg font-bold text-gray-900 mb-1">Entrega a domicilio</h3>
+                <p class="text-sm text-gray-600">Recibe el pan calentito en tu puerta.</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative reveal">
+            <div class="absolute inset-0 bg-gradient-to-br from-amber-200 to-orange-200 rounded-3xl transform rotate-3"></div>
+            <img src="https://images.unsplash.com/photo-1568471173242-461f0a730452?w=800&q=80" alt="Panadero trabajando" class="relative rounded-3xl shadow-2xl w-full aspect-square object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gradient-to-br from-amber-100 via-orange-50 to-amber-50 relative overflow-hidden">
+      <div class="absolute top-10 left-10 w-40 h-40 bg-white rounded-full blur-3xl opacity-50"></div>
+      <div class="absolute bottom-10 right-10 w-60 h-60 bg-amber-300 rounded-full blur-3xl opacity-30"></div>
+      <div class="container-page relative">
+        <div class="text-center mb-14 reveal">
+          <p class="section-subtitle">Testimonios</p>
+          <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+        </div>
+        <div id="testimonios-grid" class="grid md:grid-cols-3 gap-6 stagger"></div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="container-page">
+        <div class="relative overflow-hidden bg-gradient-to-br from-amber-500 via-orange-500 to-amber-600 rounded-3xl p-10 md:p-16 text-center text-white shadow-2xl reveal">
+          <div class="absolute top-0 right-0 w-72 h-72 bg-white rounded-full blur-3xl opacity-20 -translate-y-1/2 translate-x-1/2"></div>
+          <div class="absolute bottom-0 left-0 w-72 h-72 bg-orange-300 rounded-full blur-3xl opacity-30 translate-y-1/2 -translate-x-1/2"></div>
+          <div class="relative">
+            <h2 class="font-display text-3xl md:text-5xl font-bold mb-4">¿Listo para comenzar el día con un buen pan?</h2>
+            <p class="text-amber-100 mb-8 max-w-2xl mx-auto text-lg">Explora nuestro catálogo y descubre todos los sabores que tenemos recién salidos del horno para ti.</p>
+            <a href="productos.html" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-amber-700 font-semibold rounded-full hover:bg-amber-50 transition shadow-xl hover:shadow-2xl hover:-translate-y-0.5">
+              Ver Productos
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    const categoriasGrid = document.getElementById('categorias-grid');
+    categoriasGrid.innerHTML = CATEGORIAS.map((cat, idx) => `
+      <a href="productos.html?categoria=${cat.id}" class="reveal reveal-delay-${(idx % 4) + 1} bg-white border-2 border-amber-100 hover:border-amber-300 rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-2xl hover:shadow-amber-500/10 hover:-translate-y-2 group">
+        <div class="text-5xl mb-3 group-hover:scale-125 transition-transform duration-500">${cat.icono}</div>
+        <h3 class="font-display text-lg font-bold text-gray-900 mb-1">${cat.nombre}</h3>
+        <p class="text-xs text-gray-500">${cat.descripcion}</p>
+      </a>
+    `).join('');
+
+    const destacadosGrid = document.getElementById('destacados-grid');
+    const destacados = PRODUCTOS.filter(p => p.destacado).slice(0, 4);
+    destacadosGrid.innerHTML = destacados.map(renderProductoCard).join('');
+
+    const testimoniosGrid = document.getElementById('testimonios-grid');
+    testimoniosGrid.innerHTML = TESTIMONIOS.map(t => `
+      <div class="bg-white p-7 rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-amber-100/50 relative">
+        <svg class="absolute top-4 right-4 w-10 h-10 text-amber-100" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+        <div class="flex mb-3">${renderEstrellas(t.rating, 'md')}</div>
+        <p class="text-gray-700 mb-4 italic leading-relaxed">"${t.texto}"</p>
+        <p class="font-bold text-gray-900">${t.nombre}</p>
+      </div>
+    `).join('');
+  </script>
+</body>
+</html>
